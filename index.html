@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Form JS</title>
+</head>
+<body>
+  <section class="section-form">
+    <div class="container">
+      <h2 class="section-form__title title title--center">Сохранение данных из&nbsp;формы в&nbsp;LocalStorage</h2>
+      <p class="section-form__descr descr descr--center">Вы&nbsp;заполняете поля формы на&nbsp;сайте. Происходит непредвиденная ситуация и&nbsp;данные из&nbsp;полей формы стираются. Неприятная ситуация...</p>
+      <form action="" class="section-form__form form">
+        <h3 class="form__title">Остались вопросы?</h3>
+        <p class="form__descr">Задайте интересующий Вас вопрос и&nbsp;мы&nbsp;ответим Вам в&nbsp;кратчайшие сроки</p>
+        <label for="person-name" class="form__label form-field">
+          <span class="form-field__caption">Имя*</span>
+          <input class="form-field__input" type="text" name="person-name" id="person-name" placeholder="Ваше имя" required>
+        </label>
+        <label for="person-tel" class="form__label form-field">
+          <span class="form-field__caption">Телефон*</span>
+          <input class="form-field__input" type="tel" name="person-tel" id="person-tel" placeholder="Ваш телефон" required>
+        </label>
+        <label for="person-email" class="form__label form-field">
+          <span class="form-field__caption">Почта*</span>
+          <input class="form-field__input" type="email" name="person-email" id="person-email" placeholder="Ваша почта" required>
+        </label>
+        <label for="person-message" class="form__label form-field">
+          <span class="form-field__caption">Ваше сообщение*</span>
+          <textarea class="form-field__textarea" name="person-messag" id="person-messag" rows="4" placeholder="Ваше сообщение"></textarea>
+        </label>
+        <label for="acception" class="form__label form-checkbox">
+          <input class="form-checkbox__input" type="checkbox" id="acception" name="accept_rules">
+          <span class="form-checkbox__caption">
+            Я&nbsp;согласен подписаться на&nbsp;новостную рассылку
+          </span>
+      </label>
+        <button type="submit" class="btn-reset form__btn-submit btn btn--fill">Отправить</button>
+      </form>
+    </div>
+    
+  </section>
+
+  <script src="./index.js"></script>
+</body>
+</html>
